@@ -13,7 +13,7 @@ def predict(req: func.HttpRequest) -> func.HttpResponse:
 
     tenure = req.params.get("tenure")
     monthly = req.params.get("monthly")
-    techsupport = req.paramgs.get("techsupport")
+    techsupport = req.params.get("techsupport")
 
     if tenure and monthly and techsupport:
         prediction = make_prediction(
